@@ -1,0 +1,15 @@
+一路下去，勾选
+add a desktop shortcut for SecureCRT
+破解：
+
+1、保持SecureCRT未打开。
+
+2、打开注册机 管理员身份运行 keygen.exe文件（Windows vista ,7,8需要以管理员身份运行），
+点击【Patch】按钮，会让你选择文件 ，选择SecureCRT.exe可执行文件，还会再提示LicenseHelper.exe文件。
+确定后都会提示成功。
+（这里要选择两次，第二次弹出来的时候还要选一次，好蠢，同一个东西还让选两次）
+
+3、然后打开CRT软件，按照相应的提示输入注册机上显示的信息。
+注意，默认打开CRT时候会是一个输入key的页面，什么都不输入，点击下一步，选择输入自己的相关信息。
+Enter License Manually
+就会看到分别让你输入名称、序列号等相关日期了,对号入座填进去就好了。完成结束。打开SecureCRT看看自己的是否有激活成功。

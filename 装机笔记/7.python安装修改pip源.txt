@@ -1,0 +1,16 @@
+https://blog.csdn.net/zheng_lan_fang/article/details/78612392
+
+安装的时候注意把使用者改为 all users
+
+2.换源 
+(1):在windows文件管理器中,输入 %APPDATA%
+
+(2):会定位到一个新的目录下，在该目录下新建pip文件夹，然后到pip文件夹里面去新建个pip.ini文件
+
+(3):在新建的pip.ini文件中输入以下内容，搞定文件路径："C:\Users\pengj\AppData\Roaming\pip\pip.ini"
+以记事本形式打开，然后敲入 
+[global]  
+timeout = 6000 
+index-url = http://pypi.douban.com/simple  
+trusted-host = pypi.douban.com
+ 

@@ -1,0 +1,51 @@
+基本上一路下一路就可以安装好
+然后就是添加 ssh keygen 到 github 上了
+注意 ssh-keygen -t rsa -C “youremail” 这里要加双引号，不然ssh key gen 老出错 马丹的
+使用Git Bash生成新的ssh key。
+$ ssh-keygen -t rsa -C "xxxxxx@yy.com"  #建议填写自己真实有效的邮箱地址
+Generating public/private rsa key pair.
+
+Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车
+
+Enter passphrase (empty for no passphrase):   #输入密码（可以为空）
+
+Enter same passphrase again:   #再次确认密码（可以为空）
+
+Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥
+
+Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥
+
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|                 |
+|                 |
+|         .       |
+|  . .   S + .    |
+| . * . . X o     |
+|.+o.O o * =      |
+|*=E*.= * @       |
+|@*+=+ = *.o      |
++----[SHA256]-----+
+
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBUxygsWKEtM9a7Wl4t6+en13e8kBg7kezogdJDUFDnAGhqF0gnAjnq2eYuaAy786u1GKiYP1s9kKSmW/UftGvWjgmwxudBWuuke3S2ePHsUIu42ClgWH2uKaQ9+FaC7E26LeE2RFoEpSz1Sk+m+WfPtWD8S18xWOLY5U82JpL21fA14DCugQHxIw/Mhj/SyppKRE+KzDwZyJ4/M+Dx7JcKG0sYKEm9CvyZ/p4G+dT2+Q9nuHU0hZ2mvdSUgo9Z3LGgm3fSQxEXV/pFpvjb8DhGxMtmbvvrHs/dCqhqhAcxhVD4EHVtuGiIPhzS97ZAfuofyIbd7W9MdwGI9P4I5K/ pengjianbiao@hotmail.com
+
+复制上面这一行
+粘贴到github中 setting->SSH and GPG keys ->New SSH key-> 粘贴，title自己取一个 确定
+
+在中 验证一下，随便 git clone 一个repository来试试
+在 git bash 中：
+pengj@DESKTOP-NM9PBKC MINGW64 ~/Desktop
+$ git clone git@github.com:JackyPJB/new-pc.git
+
+Cloning into 'new-pc'...
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
