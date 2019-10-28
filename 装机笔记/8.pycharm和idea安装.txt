@@ -1,0 +1,2 @@
+激活
+代码提示忽略大小写 setting->code completion 去掉 Match case 的√  https://blog.csdn.net/sinat_34405629/article/details/81913230

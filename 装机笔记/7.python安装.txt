@@ -1,0 +1,18 @@
+https://blog.csdn.net/zheng_lan_fang/article/details/78612392
+
+1.pip升级 
+python -m pip install –upgrade pip
+2.换源 
+在windows资源管理器下键入%APPDATA% 
+新建文件夹pip 
+进入新建的这个pip文件夹内，新建文件pip.ini，以记事本形式打开，然后敲入 
+[global]  
+timeout = 6000 
+index-url = http://pypi.douban.com/simple  
+trusted-host = pypi.douban.com 
+
+---------------------
+作者：双子木子 
+来源：CSDN 
+原文：https://blog.csdn.net/xx352890098/article/details/78566086?utm_source=copy 
+版权声明：本文为博主原创文章，转载请附上博文链接！
